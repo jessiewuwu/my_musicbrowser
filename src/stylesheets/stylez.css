@@ -7,7 +7,8 @@ html, body {
 
 .content {
   width: 85%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: auto; }
 
 .wrapper {
   min-height: calc(100vh - 160px);
@@ -81,12 +82,12 @@ nav {
           .aside.right-section ul li p span:first-child {
             color: #fef378; }
 
-@media (max-width: 910px) {
+@media (max-device-width: 910px) {
   .right-section.aside {
     width: 100%;
     float: left;
     height: auto; } }
-@media (max-width: 650px) {
+@media (max-device-width: 650px) {
   .left-section {
     width: 100%;
     float: left;
@@ -135,13 +136,13 @@ nav {
 .card2, .card4 {
   margin-left: 25px; }
 
-@media (max-width: 650px) {
+@media (max-device-width: 650px) {
   .card.card-section {
     margin-left: 0px; }
 
   .card2, .card4 {
     margin-left: 0px; } }
-@media (min-width: 650px) {
+@media (min-device-width: 650px) {
   .card.card-section {
     width: 33%; } }
 footer {
@@ -155,7 +156,7 @@ footer {
     footer li:first-child {
       color: white; }
 
-@media (max-width: 650px) {
+@media (max-device-width: 650px) {
   footer ul li {
     display: block;
     margin-bottom: 10px; } }
