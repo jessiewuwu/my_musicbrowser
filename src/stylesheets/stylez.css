@@ -7,6 +7,19 @@ body {
   background-size: cover;
   color: white; }
 
+/*horizontal nav,footer lists on homepage*/
+nav ul, footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  nav ul li, footer ul li {
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    nav ul li a, footer ul li a {
+      text-decoration: none;
+      color: inherit; }
+
 nav {
   background: black;
   border: 1px solid hotpink;
@@ -15,18 +28,9 @@ nav {
   padding-top: 15px;
   padding-bottom: 15px; }
   nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     text-align: center; }
     nav ul li {
-      display: inline;
-      text-transform: uppercase;
-      letter-spacing: 1px;
       padding-right: 25px; }
-      nav ul li a {
-        text-decoration: none;
-        color: inherit; }
 
 aside, article {
   padding: 25px;
@@ -111,5 +115,18 @@ aside {
 @media (min-width: 650px) {
   .card.card-section {
     width: 35%; } }
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background: black;
+  text-align: center;
+  color: #fef378;
+  padding: 2%;
+  font-size: .8em; }
+  footer li {
+    margin-left: 10px; }
+    footer li:first-child {
+      color: white; }
 
 /*# sourceMappingURL=stylez.css.map */
