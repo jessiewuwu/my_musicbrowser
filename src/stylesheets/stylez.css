@@ -1,9 +1,14 @@
+@font-face {
+  font-family: 'San Francisco';
+  src: url("../fonts/SanFranciscoDisplay-Thin.otf"); }
 body {
-  font-family: "Open Sans", "Helvetica", sans-serif;
-  /*  background: black;
-    color: white;*/ }
+  font-family: "San Francisco", "Helvetica", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url("../images/bkgnd_homepage.jpg");
+  background-size: cover;
+  color: white; }
 
 nav {
+  background: black;
   border: 1px solid hotpink;
   width: 65%;
   margin: 0 auto;
@@ -17,47 +22,56 @@ nav {
     nav ul li {
       display: inline;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
       padding-right: 25px; }
       nav ul li a {
         text-decoration: none;
         color: inherit; }
 
-section {
-  border: 1px solid orchid; }
+aside, article {
+  padding: 25px;
+  margin: 50px; }
 
 aside {
   border: 1px solid red; }
   aside h4 {
     text-transform: uppercase;
-    letter-spacing: 0.5px; }
+    letter-spacing: 1px; }
   aside ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
     aside ul li {
-      /*margin-left: 20px;*/ }
+      list-style-type: none;
+      margin-left: 0px;
+      padding-left: 0px;
+      display: inline-block; }
       aside ul li img {
         border-radius: 50%;
-        width: 25px;
-        height: 25px;
-        display: inline; }
+        width: 50px;
+        height: 50px;
+        float: left;
+        /*display: inline;*/ }
       aside ul li p {
-        display: inline; }
+        /*display: inline;*/
+        text-align: right;
+        display: inline-block;
+        padding: 0; }
         aside ul li p span {
           display: block; }
+          aside ul li p span:first-child {
+            color: #fef378;
+            float: left; }
 
 .card {
-  border: 1px solid teal;
   height: 300px;
   display: inline-block;
-  background-image: url("http://www.tpevent.com/wp-content/uploads/2016/01/cute-cat-images-tpevent-10.jpg");
-  background-size: cover;
   box-shadow: 5px 5px 5px grey;
   padding: 15px;
   position: relative;
   margin-top: 25px;
-  color: white; }
+  color: white;
+  background-size: cover; }
   .card h2, .card p {
     position: absolute;
     left: 0;
@@ -67,6 +81,18 @@ aside {
     bottom: 30px; }
   .card p {
     bottom: 0; }
+
+.card1 {
+  background-image: url("../images/bkgnd_ new_and_noteworthy.png"); }
+
+.card2 {
+  background-image: url("../images/bkgnd_preorder.png"); }
+
+.card3 {
+  background-image: url("../images/bkgnd_bestof2015.png"); }
+
+.card4 {
+  background-image: url("../images/bkgnd_newartist.png"); }
 
 .card-section {
   width: 100%;
