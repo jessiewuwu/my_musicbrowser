@@ -19,7 +19,7 @@ html, body {
 
 .wrapper{
   min-height: calc(100vh - 160px);
-  /*margin: 2%;*/
+  margin-bottom: 2%;
 }
 
 
@@ -32,37 +32,65 @@ body {
 
 /*horizontal nav,footer lists on homepage*/
 
-nav, footer {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    li {
-      display: inline;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
+nav .nav-bar, footer ul{  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline;
+    text-transform: uppercase;
+    /*letter-spacing: 1px;*/
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   }
 }
 
 nav {
+  letter-spacing: 1px;
   background: black;
-  /*border: 1px solid hotpink;*/
   width: 100%;
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
-  ul {
-    
+  ul.nav-bar {
     text-align: center;
     li {
       padding-right: 25px;
     }
   }
+  .mobile-nav {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    .fa.fa-bars {
+      float: left;
+    }
+    .fa.fa-search {
+      float: right;
+      margin-top: -20px;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+
+  .mobile-nav.open {
+    .fa-bars, .fa-search {
+      display: none;
+    }
+  }
+
 }
 
 .left-section {
@@ -222,5 +250,17 @@ footer {
   footer ul li {
     display: block;
     margin-bottom: 10px;
+  }
+}
+
+/*mobile nav bar*/
+@media (max-device-width: 550px) {
+
+  .nav-bar {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
   }
 }
