@@ -6,6 +6,18 @@ $yellow: #fef378;
   src: url("../fonts/SanFranciscoDisplay-Thin.otf");
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+.content {
+  min-height: calc(100vh - 160px);
+}
+
+
 body {
   font-family: $default-font, 'Helvetica', sans-serif;
   background-image:  linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75) ),url("../images/bkgnd_homepage.jpg");
@@ -162,18 +174,23 @@ aside{
 
 
 footer {
-  bottom: 0;
-  position: absolute;
   width: 100%;
   background: black;
   text-align: center;
   color: $yellow;
-  padding: 2%;
   font-size: .8em;
+  padding: 1%;
   li {
     margin-left: 10px;
     &:first-child {
       color: white;
     }
+  }
+}
+
+@media (max-width: 650px) {
+  footer ul li {
+    display: block;
+    margin-bottom: 10px;
   }
 }
