@@ -6,7 +6,12 @@ html, body {
   margin: 0; }
 
 .content {
-  min-height: calc(100vh - 160px); }
+  width: 85%;
+  margin: 0 auto; }
+
+.wrapper {
+  min-height: calc(100vh - 160px);
+  /*margin: 2%;*/ }
 
 body {
   font-family: "San Francisco", "Helvetica", sans-serif;
@@ -29,8 +34,8 @@ nav ul, footer ul {
 
 nav {
   background: black;
-  border: 1px solid hotpink;
-  width: 65%;
+  /*border: 1px solid hotpink;*/
+  width: 100%;
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px; }
@@ -39,45 +44,62 @@ nav {
     nav ul li {
       padding-right: 25px; }
 
-aside, article {
-  padding: 25px;
-  margin: 50px; }
+.left-section {
+  width: 50%;
+  height: 85vh;
+  display: inline;
+  border: 1px solid black;
+  /*not exactly sure why this is needed to make both columns side by side*/ }
 
-aside {
-  border: 1px solid red; }
-  aside h4 {
+.aside.right-section {
+  dispay: inline;
+  width: 19%;
+  float: right;
+  margin: 2%; }
+  .aside.right-section h4 {
     text-transform: uppercase;
     letter-spacing: 1px; }
-  aside ul {
+  .aside.right-section ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-    aside ul li {
+    .aside.right-section ul li {
       list-style-type: none;
       margin-left: 0px;
-      padding-left: 0px;
-      display: inline-block; }
-      aside ul li img {
+      padding-left: 0px; }
+      .aside.right-section ul li img {
         border-radius: 50%;
         width: 50px;
         height: 50px;
         float: left;
-        /*display: inline;*/ }
-      aside ul li p {
-        /*display: inline;*/
-        text-align: right;
+        margin-right: 15px; }
+      .aside.right-section ul li p {
         display: inline-block;
         padding: 0; }
-        aside ul li p span {
+        .aside.right-section ul li p span {
           display: block; }
-          aside ul li p span:first-child {
-            color: #fef378;
-            float: left; }
+          .aside.right-section ul li p span:first-child {
+            color: #fef378; }
 
+@media (max-width: 910px) {
+  .right-section.aside {
+    width: 100%;
+    float: left;
+    height: auto; } }
+@media (max-width: 650px) {
+  .left-section {
+    width: 100%;
+    float: left;
+    height: auto; }
+
+  .right-section.aside ul {
+    margin-left: 10px; }
+    .right-section.aside ul li {
+      display: block; } }
 .card {
   height: 300px;
   display: inline-block;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.13);
   padding: 15px;
   position: relative;
   margin-top: 25px;
@@ -108,7 +130,7 @@ aside {
 .card-section {
   width: 100%;
   float: left;
-  box-sizing: border-box; }
+  /*box-sizing: border-box;*/ }
 
 .card2, .card4 {
   margin-left: 25px; }
@@ -121,10 +143,9 @@ aside {
     margin-left: 0px; } }
 @media (min-width: 650px) {
   .card.card-section {
-    width: 35%; } }
+    width: 33%; } }
 footer {
   width: 100%;
-  background: black;
   text-align: center;
   color: #fef378;
   font-size: .8em;

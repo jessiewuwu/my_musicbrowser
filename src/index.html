@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <div class="content">
+  <div class="wrapper">
     <nav>
       <ul>
         <li><a href="#">My Music</a></li>
@@ -22,72 +22,76 @@
       </ul>
     </nav>
 
-    <section>
-      <article class="card-section card card1">
-        <h2>New and Noteworthy</h2>
-        <p>Kicking off 2016 with these new hits</p>
-      </article>
-      <article class="card-section card card2">
-        <h2>Pre-Order New Music</h2>
-        <p>Available later this season</p>
-      </article>
-      <article class="card-section card card3">
-        <h2>Best of 2015</h2>
-        <p>Rewind last year's best hits</p>
-      </article>
-      <article class="card-section card card4">
-        <h2>New Artist Spotlight</h2>
-        <p>Hear some of the newest hits in 2016</p>
-      </article>
-    </section>
+    <div class="content">
+  <!--     with html5, it's possible to have div.left-section be section with articles and div.right-section to be aside, however i was having some problem getting them to be aligned responsively so I resorted to floating divs -->
+      <div class="left-section">
+        <article class="card-section card card1">
+          <h2>New and Noteworthy</h2>
+          <p>Kicking off 2016 with these new hits</p>
+        </article>
+        <article class="card-section card card2">
+          <h2>Pre-Order New Music</h2>
+          <p>Available later this season</p>
+        </article>
+        <article class="card-section card card3">
+          <h2>Best of 2015</h2>
+          <p>Rewind last year's best hits</p>
+        </article>
+        <article class="card-section card card4">
+          <h2>New Artist Spotlight</h2>
+          <p>Hear some of the newest hits in 2016</p>
+        </article>
+      </div>
 
-    <aside>
-      <h4>Top Songs</h4>
-      <ul>
-        <li>
-          <img src="images/top_1.jpg" alt="Desiigner album">
-          <p>
-            <span>Panda</span>
-            <span>Desiigner</span>
-          </p>
-        </li>
-        <li>
-          <img src="images/top_2_5.jpg" alt="Rihanna album">
-          <p>
-            <span>Needed Me</span>
-            <span>Rihanna</span>
-          </p>
-        </li>
-        <li>
-          <img src="images/top_3.jpg" alt="The Chainsmokers album">
-          <p>
-            <span>Don't Let Me Down</span>
-            <span>The Chainsmokers, Daya</span>
-          </p>
-        </li>
-        <li>
-          <img src="images/top_4.jpg" alt="Lukas Graham album">
-          <p>
-            <span>7 years</span>
-            <span>Lukas Graham</span>
-          </p>
-        </li>
-        <li>
-          <img src="images/top_2_5.jpg" alt="Rihanna Drake album">
-          <p>
-            <span>Work</span>
-            <span>Rihanna, Drake</span>
-          </p>
-        </li>
-        <li>
-          <img src="images/top_6.jpg" alt="Mike Posner album">
-          <p>
-            <span>I Took A Pill in Ibiza - Seeb...</span>
-            <span>Mike Posner</span>
-          </p>
-        </li>
-      </ul>
-    </aside>
+      <div class="right-section aside">
+        <h4>Top Songs</h4>
+        <ul>
+          <li>
+            <img src="images/top_1.jpg" alt="Desiigner album">
+            <p>
+              <span>Panda</span>
+              <span>Desiigner</span>
+            </p>
+          </li>
+          <li>
+            <img src="images/top_2_5.jpg" alt="Rihanna album">
+            <p>
+              <span>Needed Me</span>
+              <span>Rihanna</span>
+            </p>
+          </li>
+          <li>
+            <img src="images/top_3.jpg" alt="The Chainsmokers album">
+            <p>
+              <span>Don't Let Me Down</span>
+              <span>The Chainsmokers, Daya</span>
+            </p>
+          </li>
+          <li>
+            <img src="images/top_4.jpg" alt="Lukas Graham album">
+            <p>
+              <span>7 years</span>
+              <span>Lukas Graham</span>
+            </p>
+          </li>
+          <li>
+            <img src="images/top_2_5.jpg" alt="Rihanna Drake album">
+            <p>
+              <span>Work</span>
+              <span>Rihanna, Drake</span>
+            </p>
+          </li>
+          <li>
+            <img src="images/top_6.jpg" alt="Mike Posner album">
+            <p>
+              <span>I Took A Pill in Ibiza - Seeb...</span>
+              <span>Mike Posner</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 
   <footer>
