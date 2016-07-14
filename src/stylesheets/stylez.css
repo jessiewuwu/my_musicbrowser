@@ -167,10 +167,12 @@ button#display-toggle {
   background-image: url("../images/bkgnd_ new_and_noteworthy.png"); }
 
 .card2 {
-  background-image: url("../images/bkgnd_preorder.png"); }
+  background-image: url("../images/bkgnd_preorder.png");
+  color: #cbaf92; }
 
 .card3 {
-  background-image: url("../images/bkgnd_bestof2015.png"); }
+  background-image: url("../images/bkgnd_bestof2015.png");
+  color: #2d3141; }
 
 .card4 {
   background-image: url("../images/bkgnd_newartist.png"); }
@@ -202,6 +204,7 @@ button#display-toggle {
 footer {
   width: 100%;
   text-align: center;
+  letter-spacing: 1px;
   color: #fef378;
   font-size: .8em;
   padding: 1%; }

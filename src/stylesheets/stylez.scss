@@ -231,10 +231,12 @@ button#display-toggle {
 
 .card2 {
   background-image: url("../images/bkgnd_preorder.png");
+  color: #cbaf92;
 }
 
 .card3 {
   background-image: url("../images/bkgnd_bestof2015.png");
+  color: #2d3141;
 }
 
 .card4 {
@@ -277,6 +279,7 @@ button#display-toggle {
 footer {
   width: 100%;
   text-align: center;
+  letter-spacing: 1px;
   color: $yellow;
   font-size: .8em;
   padding: 1%;
