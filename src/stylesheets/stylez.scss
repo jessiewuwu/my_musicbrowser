@@ -174,7 +174,7 @@ button#display-toggle {
 }
 
 
-@media (max-device-width: 910px) {
+@media (max-width: 910px) {
   .right-section.aside {
     width: 100%;
     float: left;
@@ -182,7 +182,7 @@ button#display-toggle {
   }
 }
 
-@media (max-device-width: 650px){
+@media (max-width: 650px){
   .left-section {
     width: 100%;
     float: left;
@@ -206,7 +206,7 @@ button#display-toggle {
   box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.13);
   padding: 15px;
   position: relative;
-  margin-top: 25px;
+  margin-top: 60px;
   color: white;
   background-size: cover;
 
@@ -252,7 +252,7 @@ button#display-toggle {
   margin-left: 25px;
 }
 
-@media (max-device-width: 650px) {
+@media (max-width: 650px) {
   .card.card-section {
     margin-left: 0px;
   }
@@ -262,7 +262,7 @@ button#display-toggle {
 }
 
 /*larger than mobile*/
-@media (min-device-width: 650px) {
+@media (min-width: 650px) {
   .card.card-section {
     width: 33%;
   }
@@ -289,7 +289,7 @@ footer {
   }
 }
 
-@media (max-device-width: 650px) {
+@media (max-width: 650px) {
   footer ul li {
     display: block;
     margin-bottom: 10px;
@@ -297,7 +297,7 @@ footer {
 }
 
 /*mobile view */
-@media (max-device-width: 650px) {
+@media (max-width: 650px) {
   .nav-bar {
     display: none;
   }
