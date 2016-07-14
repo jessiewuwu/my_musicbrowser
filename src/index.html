@@ -6,8 +6,9 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/stylez.css">
   <script src="https://use.fontawesome.com/2be986eb1f.js"></script>
+  <script src="scripts/vanilla_script.js"></script>
 </head>
-<body>
+<body onload="toggleResponsiveNav();">
 
   <div class="wrapper">
     <nav>
@@ -20,18 +21,16 @@
           <i class="fa fa-search" aria-hidden="true"></i>
         </li>
       </ul>
-      <div class="mobile-nav">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-        <ul>
-          <li>
-            <i class="fa fa-times close-x" aria-hidden="true" ></i>
-          </li>
+      <div class="mobile-nav" id="mobile-nav">
+        <i class="fa fa-bars closed" id="hamburger-menu" aria-hidden="true"></i>
+        <i class="fa fa-times close-x" id="exit-icon" aria-hidden="true" ></i>
+        <ul class="toggle-menu" id="responsive-nav">
           <li><a href="#">My Music</a></li>
           <li><a href="#">Playlist</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Explore</a></li>
         </ul>
-        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fa fa-search closed" id="search-button" aria-hidden="true"></i>
       </div>
     </nav>
 
@@ -134,7 +133,6 @@
         </a></li>
     </ul>
   </footer>
-    
 
 </body>
 </html>

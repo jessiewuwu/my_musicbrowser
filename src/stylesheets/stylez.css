@@ -24,7 +24,7 @@ body {
 nav .nav-bar, footer ul {
   list-style-type: none;
   margin: 0;
-  padding: 0; }
+  padding: 15px; }
   nav .nav-bar li, footer ul li {
     display: inline;
     text-transform: uppercase;
@@ -38,21 +38,34 @@ nav {
   background: black;
   width: 100%;
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  /*padding-top: 15px;
+  padding-bottom: 15px;*/
+  position: absolute;
+  z-index: 2; }
   nav ul.nav-bar {
     text-align: center; }
     nav ul.nav-bar li {
       padding-right: 25px; }
   nav .mobile-nav {
-    display: none;
-    width: 90%;
-    margin: 0 auto; }
+    /*display: none;*/
+    /*position: absolute;*/
+    position: relative;
+    /*left: 0px;*/
+    top: 0px;
+    /*z-index: 1;*/
+    /*background: black;*/
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px 15px; }
+    nav .mobile-nav .fa {
+      margin-top: -5px; }
     nav .mobile-nav .fa.fa-bars {
       float: left; }
     nav .mobile-nav .fa.fa-search {
       float: right;
-      margin-top: -20px; }
+      /*margin-top: -20px;*/ }
+    nav .mobile-nav .close-x {
+      display: none; }
     nav .mobile-nav ul {
       list-style-type: none; }
       nav .mobile-nav ul li {
@@ -163,7 +176,10 @@ nav {
     margin-left: 0px; } }
 @media (min-device-width: 650px) {
   .card.card-section {
-    width: 33%; } }
+    width: 33%; }
+
+  .mobile-nav {
+    display: none; } }
 footer {
   width: 100%;
   text-align: center;
@@ -180,11 +196,20 @@ footer {
     display: block;
     margin-bottom: 10px; } }
 /*mobile nav bar*/
-@media (max-device-width: 550px) {
+@media (max-device-width: 650px) {
   .nav-bar {
     display: none; }
 
   .mobile-nav {
-    display: block; } }
+    display: block; }
+    .mobile-nav ul {
+      display: none; } }
+/*animated menu sliding down*/
+.slide#responsive-nav {
+  transition: height 500ms ease;
+  -moz-transition: height 500ms ease;
+  -ms-transition: height 500ms ease;
+  -o-transition: height 500ms ease;
+  -webkit-transition: height 500ms ease; }
 
 /*# sourceMappingURL=stylez.css.map */
