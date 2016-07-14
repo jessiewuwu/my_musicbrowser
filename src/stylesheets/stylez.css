@@ -114,6 +114,23 @@ nav {
           .aside.right-section ul li p span:first-child {
             color: #fef378; }
 
+button#display-toggle {
+  background: #fef378;
+  font-weight: 100;
+  border: none;
+  border-radius: 3em;
+  width: 285px;
+  height: 50px;
+  color: black;
+  font-size: 18px;
+  line-height: 50px;
+  text-transform: none;
+  margin: 3% auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  button#display-toggle:focus {
+    outline: none; }
+
 @media (max-device-width: 910px) {
   .right-section.aside {
     width: 100%;
@@ -174,11 +191,15 @@ nav {
 
   .card2, .card4 {
     margin-left: 0px; } }
+/*larger than mobile*/
 @media (min-device-width: 650px) {
   .card.card-section {
     width: 33%; }
 
   .mobile-nav {
+    display: none; }
+
+  button#display-toggle {
     display: none; } }
 footer {
   width: 100%;
@@ -195,7 +216,7 @@ footer {
   footer ul li {
     display: block;
     margin-bottom: 10px; } }
-/*mobile nav bar*/
+/*mobile view */
 @media (max-device-width: 650px) {
   .nav-bar {
     display: none; }
@@ -203,7 +224,13 @@ footer {
   .mobile-nav {
     display: block; }
     .mobile-nav ul {
-      display: none; } }
+      display: none; }
+
+  .right-section.aside ul li:nth-last-child(-n+3) {
+    display: none; }
+
+  #display-toggle {
+    display: block; } }
 /*animated menu sliding down*/
 .slide#responsive-nav {
   transition: height 500ms ease;
