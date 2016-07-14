@@ -230,11 +230,13 @@ footer {
   #display-toggle {
     display: block; } }
 /*animated menu sliding down*/
-.slide#responsive-nav {
-  transition: height 500ms ease;
-  -moz-transition: height 500ms ease;
-  -ms-transition: height 500ms ease;
-  -o-transition: height 500ms ease;
-  -webkit-transition: height 500ms ease; }
+#mobile-nav {
+  transition: height 1s ease-out;
+  height: 0;
+  overflow: hidden; }
+
+#responsive-nav {
+  height: 200px;
+  padding: 20px; }
 
 /*# sourceMappingURL=stylez.css.map */

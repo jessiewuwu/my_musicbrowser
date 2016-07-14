@@ -1,27 +1,27 @@
 function toggleResponsiveNav(){
 
   // toggle mobile nav bar
-  document.getElementById('hamburger-menu').onclick = renderMenu;
-  document.getElementById('exit-icon').onclick = closeMenu;
+  document.getElementById("hamburger-menu").addEventListener("click", function () {renderMenu()})
+  document.getElementById("exit-icon").addEventListener("click", function () {closeMenu()})
 
   // see more/less Top Songs mobile
   document.getElementById('display-toggle').onclick = toggleSongs;
 }
 
 function renderMenu() {
-  var responsiveMenu = document.getElementById('responsive-nav');
-  responsiveMenu.style.display = 'block';
-  
-  document.getElementById('hamburger-menu').style.display = 'none';
-  document.getElementById('search-button').style.display = 'none';
   document.getElementById('exit-icon').style.display = 'block';
+  document.getElementById('hamburger-menu').style.display = 'none';
+  document.getElementById("mobile-nav").style.height = "170px";
+  document.getElementById('responsive-nav').style.display = 'block';
 }
 
 function closeMenu(){
-  document.getElementById('responsive-nav').style.display = 'none';
+
   document.getElementById('hamburger-menu').style.display = 'block';
   document.getElementById('search-button').style.display = 'block';
   document.getElementById('exit-icon').style.display = 'none';
+  document.getElementById("mobile-nav").style.height = "";
+  document.getElementById('responsive-nav').style.display = 'none';
 }
 
 function toggleSongs() {
