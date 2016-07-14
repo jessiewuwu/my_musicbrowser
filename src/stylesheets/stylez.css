@@ -99,6 +99,7 @@ nav {
     .aside.right-section ul li {
       list-style-type: none;
       margin-left: 0px;
+      margin-bottom: 35px;
       padding-left: 0px; }
       .aside.right-section ul li img {
         border-radius: 50%;
@@ -106,13 +107,10 @@ nav {
         height: 50px;
         float: left;
         margin-right: 15px; }
-      .aside.right-section ul li p {
-        display: inline-block;
-        padding: 0; }
-        .aside.right-section ul li p span {
-          display: block; }
-          .aside.right-section ul li p span:first-child {
-            color: #fef378; }
+      .aside.right-section ul li span {
+        display: block; }
+        .aside.right-section ul li span:first-child {
+          color: #fef378; }
 
 button#display-toggle {
   background: #fef378;

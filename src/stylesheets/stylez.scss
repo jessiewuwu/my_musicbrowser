@@ -132,6 +132,7 @@ nav {
     li {
       list-style-type: none;
       margin-left: 0px;
+      margin-bottom: 35px;
       padding-left: 0px;
       img {
         border-radius: 50%;
@@ -140,16 +141,14 @@ nav {
         float: left;
         margin-right: 15px;
       }
-      p {
-        display: inline-block;
-        padding: 0;
-        span {
-          display: block;
-          &:first-child {
-            color: $yellow;
-          }
+
+      span {
+        display: block;
+        &:first-child {
+          color: $yellow;
         }
       }
+
     }
   }
 }
