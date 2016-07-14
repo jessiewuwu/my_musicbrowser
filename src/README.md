@@ -1,13 +1,18 @@
-Name:
+Music Browser
+=============
 
-Tools used:
+Name: Jessie Wu
 
-Editor used:
+Tools used: 
+* Font Awesome for some quick icons
+* Plain ol vanilla Javascript
 
-Time taken:
+Editor used: Sublime 3
 
-Additional comments (optional):
+Time taken: 10 hours
 
-Questions:
-- Font awesome icons
-- Google fonts or font-face?
+TODO's: 
+* animate a slow toggle for the mobile nav bar
+* figure out why that random thin solid border is needed to maintain the two-column layout
+* fix the responsiveness for all desktop screen sizes
+
